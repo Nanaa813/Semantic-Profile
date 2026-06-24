@@ -20,10 +20,7 @@ body {
     min-height: 100vh;
     padding: 28px 8%;
     background:
-        linear-gradient(135deg, rgba(236, 72, 153, 0.92), rgba(139, 92, 246, 0.92), rgba(59, 130, 246, 0.92)),
-        url("https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1400&q=80");
-    background-size: cover;
-    background-position: center;
+        linear-gradient(135deg, rgba(236, 72, 153, 0.92), rgba(139, 92, 246, 0.92), rgba(59, 130, 246, 0.92));
     color: white;
     position: relative;
     overflow: hidden;
@@ -90,7 +87,7 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 780px;
+    max-width: 850px;
     padding-top: 120px;
 }
 
@@ -264,6 +261,17 @@ body {
     color: #6d28d9;
     box-shadow: 0 16px 35px rgba(139, 92, 246, 0.14);
     border: 1px solid rgba(139, 92, 246, 0.15);
+    transition: 0.25s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #fdf2f8, #ede9fe, #dbeafe);
+}
+
+.project-list {
+    display: grid;
+    gap: 24px;
 }
 
 .project-card {
@@ -279,6 +287,10 @@ body {
     border-radius: 24px;
     padding: 26px;
     text-align: center;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-box p {
@@ -316,6 +328,8 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 18px;
 }
 
 th,
@@ -373,5 +387,9 @@ footer {
 
     .section {
         padding-top: 56px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
     }
 }

@@ -32,35 +32,29 @@
                     "@id": "https://uho.ac.id/#university"
                 },
                 "knowsAbout": [
-                    {
-                        "@id": "#html"
-                    },
-                    {
-                        "@id": "#css"
-                    },
-                    {
-                        "@id": "#php"
-                    },
-                    {
-                        "@id": "#rdf"
-                    },
-                    {
-                        "@id": "#owl"
-                    },
-                    {
-                        "@id": "#sparql"
-                    },
-                    {
-                        "@id": "#json-ld"
-                    },
-                    {
-                        "@id": "#schema-org"
-                    }
+                    { "@id": "#html" },
+                    { "@id": "#css" },
+                    { "@id": "#javascript" },
+                    { "@id": "#php" },
+                    { "@id": "#rdf" },
+                    { "@id": "#owl" },
+                    { "@id": "#sparql" },
+                    { "@id": "#json-ld" },
+                    { "@id": "#schema-org" },
+                    { "@id": "#api-integration" },
+                    { "@id": "#cloud-deployment" },
+                    { "@id": "#machine-learning" },
+                    { "@id": "#nlp" },
+                    { "@id": "#text-classification" },
+                    { "@id": "#streamlit" },
+                    { "@id": "#github" }
                 ],
-                "creator": {
-                    "@id": "#cinematch-semantic"
-                },
-                "description": "Mahasiswa Ilmu Komputer Universitas Halu Oleo yang tertarik pada pengembangan web, Web Semantik, dan penerapan teknologi terstruktur seperti RDF, OWL, SPARQL, JSON-LD, dan Schema.org."
+                "subjectOf": [
+                    { "@id": "#cinematch-semantic" },
+                    { "@id": "#moviemate-cloud" },
+                    { "@id": "#smart-campus-nlp" }
+                ],
+                "description": "Mahasiswa Ilmu Komputer Universitas Halu Oleo yang tertarik pada pengembangan web, Web Semantik, cloud computing, dan penerapan teknologi terstruktur seperti RDF, OWL, SPARQL, JSON-LD, dan Schema.org."
             },
             {
                 "@type": "Project",
@@ -70,6 +64,12 @@
                 "creator": {
                     "@id": "#andi-nanis-sacharina"
                 },
+                "about": [
+                    { "@id": "#rdf" },
+                    { "@id": "#owl" },
+                    { "@id": "#sparql" },
+                    { "@id": "#schema-org" }
+                ],
                 "keywords": [
                     "Web Semantic",
                     "RDF",
@@ -77,11 +77,50 @@
                     "SPARQL",
                     "Linked Data",
                     "PHP"
+                ]
+            },
+            {
+                "@type": "Project",
+                "@id": "#moviemate-cloud",
+                "name": "MovieMate Cloud Computing",
+                "description": "Project aplikasi web movie untuk tugas Cloud Computing. Aplikasi ini menggunakan integrasi API film, fitur pencarian, detail film, dan penerapan deployment berbasis cloud.",
+                "creator": {
+                    "@id": "#andi-nanis-sacharina"
+                },
+                "about": [
+                    { "@id": "#api-integration" },
+                    { "@id": "#cloud-deployment" },
+                    { "@id": "#javascript" },
+                    { "@id": "#github" }
                 ],
-                "programmingLanguage": [
-                    "HTML",
-                    "CSS",
-                    "PHP"
+                "keywords": [
+                    "Cloud Computing",
+                    "Movie App",
+                    "API",
+                    "Deployment",
+                    "Web Application"
+                ]
+            },
+            {
+                "@type": "Project",
+                "@id": "#smart-campus-nlp",
+                "name": "Smart Campus NLP",
+                "description": "Project aplikasi berbasis Natural Language Processing untuk mengklasifikasikan keluhan mahasiswa berdasarkan kategori dan prioritas layanan kampus.",
+                "creator": {
+                    "@id": "#andi-nanis-sacharina"
+                },
+                "about": [
+                    { "@id": "#machine-learning" },
+                    { "@id": "#nlp" },
+                    { "@id": "#text-classification" },
+                    { "@id": "#streamlit" }
+                ],
+                "keywords": [
+                    "Smart Campus",
+                    "Natural Language Processing",
+                    "Text Classification",
+                    "Machine Learning",
+                    "Streamlit"
                 ]
             },
             {
@@ -95,6 +134,12 @@
                 "@id": "#css",
                 "name": "CSS",
                 "description": "Teknologi untuk mengatur tampilan halaman web."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#javascript",
+                "name": "JavaScript",
+                "description": "Bahasa pemrograman untuk membuat interaksi pada halaman web."
             },
             {
                 "@type": "DefinedTerm",
@@ -131,6 +176,48 @@
                 "@id": "#schema-org",
                 "name": "Schema.org",
                 "description": "Vocabulary untuk membuat data terstruktur pada halaman web."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#api-integration",
+                "name": "API Integration",
+                "description": "Kemampuan menghubungkan aplikasi dengan layanan atau sumber data eksternal melalui API."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#cloud-deployment",
+                "name": "Cloud Deployment",
+                "description": "Proses menerapkan aplikasi web agar dapat diakses secara online melalui layanan cloud atau hosting."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#machine-learning",
+                "name": "Machine Learning",
+                "description": "Bidang komputasi yang membuat sistem mampu mengenali pola dari data."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#nlp",
+                "name": "Natural Language Processing",
+                "description": "Bidang kecerdasan buatan yang berfokus pada pengolahan bahasa manusia."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#text-classification",
+                "name": "Text Classification",
+                "description": "Proses mengelompokkan teks ke dalam kategori tertentu."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#streamlit",
+                "name": "Streamlit",
+                "description": "Framework Python untuk membuat aplikasi data dan machine learning secara cepat."
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": "#github",
+                "name": "GitHub",
+                "description": "Platform untuk menyimpan, mengelola, dan membagikan source code."
             }
         ]
     }
@@ -147,6 +234,7 @@
                 <a href="#skill">Skill</a>
                 <a href="#project">Project</a>
                 <a href="#relasi">Relasi</a>
+                <a href="#schema">Schema</a>
             </div>
         </nav>
 
@@ -154,8 +242,8 @@
             <p class="label">Website Profil Semantik</p>
             <h1>Andi Nanis Sacharina</h1>
             <p class="subtitle">
-                Mahasiswa Ilmu Komputer yang mengembangkan profil semantik dengan Schema.org JSON-LD,
-                serta menghubungkannya dengan project Web Semantik CineMatch Semantic.
+                Mahasiswa Ilmu Komputer yang mengembangkan profil semantik menggunakan Schema.org JSON-LD,
+                serta menghubungkannya dengan project Web Semantik, Cloud Computing, dan Natural Language Processing.
             </p>
 
             <div class="hero-buttons">
@@ -179,8 +267,8 @@
                     <h3>Andi Nanis Sacharina</h3>
                     <p>
                         Mahasiswa Ilmu Komputer Universitas Halu Oleo yang tertarik pada pengembangan web,
-                        Web Semantik, dan penerapan data terstruktur. Website ini dibuat sebagai profil semantik
-                        yang menerapkan Schema.org JSON-LD dan relasi data bermakna.
+                        Web Semantik, cloud computing, dan penerapan data terstruktur. Website ini dibuat sebagai
+                        profil semantik yang menerapkan Schema.org JSON-LD dan relasi data bermakna.
                     </p>
 
                     <div class="info-grid">
@@ -231,12 +319,20 @@
             <div class="skill-grid">
                 <div class="skill-card">HTML</div>
                 <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
                 <div class="skill-card">PHP</div>
                 <div class="skill-card">RDF</div>
                 <div class="skill-card">OWL</div>
                 <div class="skill-card">SPARQL</div>
                 <div class="skill-card">JSON-LD</div>
                 <div class="skill-card">Schema.org</div>
+                <div class="skill-card">API Integration</div>
+                <div class="skill-card">Cloud Deployment</div>
+                <div class="skill-card">Machine Learning</div>
+                <div class="skill-card">NLP</div>
+                <div class="skill-card">Text Classification</div>
+                <div class="skill-card">Streamlit</div>
+                <div class="skill-card">GitHub</div>
             </div>
         </section>
 
@@ -250,9 +346,10 @@
                 <h3>Kegiatan Akademik dan Project Perkuliahan</h3>
                 <p>
                     Keterlibatan yang dicantumkan pada profil ini adalah kegiatan akademik dan project
-                    perkuliahan. Salah satu project yang menjadi fokus adalah CineMatch Semantic,
-                    yaitu aplikasi Web Semantik untuk mengelola data film menggunakan RDF, OWL, SPARQL,
-                    dan Linked Data.
+                    perkuliahan. Beberapa project yang menjadi fokus adalah CineMatch Semantic,
+                    MovieMate Cloud Computing, dan Smart Campus NLP. Ketiga project tersebut digunakan
+                    untuk menunjukkan hubungan antara profil mahasiswa, kemampuan teknis, dan hasil
+                    implementasi yang pernah dibuat.
                 </p>
             </div>
         </section>
@@ -260,31 +357,81 @@
         <section id="project" class="section">
             <div class="section-title">
                 <p>Project</p>
-                <h2>CineMatch Semantic</h2>
+                <h2>Project Perkuliahan</h2>
             </div>
 
-            <div class="project-card">
-                <div>
-                    <h3>CineMatch Semantic</h3>
-                    <p>
-                        CineMatch Semantic adalah project aplikasi Web Semantik yang digunakan untuk
-                        menampilkan dan mencari data film. Data film direpresentasikan menggunakan RDF,
-                        struktur pengetahuannya dibuat menggunakan OWL, dan pencarian data dilakukan
-                        menggunakan SPARQL.
-                    </p>
+            <div class="project-list">
+                <div class="project-card">
+                    <div>
+                        <h3>CineMatch Semantic</h3>
+                        <p>
+                            CineMatch Semantic adalah project aplikasi Web Semantik yang digunakan untuk
+                            menampilkan dan mencari data film. Data film direpresentasikan menggunakan RDF,
+                            struktur pengetahuannya dibuat menggunakan OWL, dan pencarian data dilakukan
+                            menggunakan SPARQL.
+                        </p>
 
-                    <div class="tag-group">
-                        <span>RDF</span>
-                        <span>OWL</span>
-                        <span>SPARQL</span>
-                        <span>PHP</span>
-                        <span>Linked Data</span>
+                        <div class="tag-group">
+                            <span>RDF</span>
+                            <span>OWL</span>
+                            <span>SPARQL</span>
+                            <span>PHP</span>
+                            <span>Linked Data</span>
+                        </div>
+                    </div>
+
+                    <div class="project-box">
+                        <p>Project Type</p>
+                        <h4>Semantic Web Application</h4>
                     </div>
                 </div>
 
-                <div class="project-box">
-                    <p>Project Type</p>
-                    <h4>Semantic Web Application</h4>
+                <div class="project-card">
+                    <div>
+                        <h3>MovieMate Cloud Computing</h3>
+                        <p>
+                            MovieMate Cloud Computing adalah project aplikasi web movie yang dibuat untuk
+                            tugas Cloud Computing. Aplikasi ini menampilkan data film melalui integrasi API,
+                            memiliki fitur pencarian, detail film, dan diterapkan pada lingkungan cloud.
+                        </p>
+
+                        <div class="tag-group">
+                            <span>Cloud Computing</span>
+                            <span>Movie App</span>
+                            <span>API</span>
+                            <span>Deployment</span>
+                            <span>Web App</span>
+                        </div>
+                    </div>
+
+                    <div class="project-box">
+                        <p>Project Type</p>
+                        <h4>Cloud Web Application</h4>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3>Smart Campus NLP</h3>
+                        <p>
+                            Smart Campus NLP adalah project aplikasi berbasis Natural Language Processing
+                            yang digunakan untuk mengklasifikasikan keluhan mahasiswa. Sistem ini membantu
+                            mengelompokkan keluhan berdasarkan kategori dan prioritas layanan kampus.
+                        </p>
+
+                        <div class="tag-group">
+                            <span>NLP</span>
+                            <span>Machine Learning</span>
+                            <span>Text Classification</span>
+                            <span>Streamlit</span>
+                            <span>Smart Campus</span>
+                        </div>
+                    </div>
+
+                    <div class="project-box">
+                        <p>Project Type</p>
+                        <h4>NLP Application</h4>
+                    </div>
                 </div>
             </div>
         </section>
@@ -313,17 +460,42 @@
                         <tr>
                             <td>Andi Nanis Sacharina</td>
                             <td>knowsAbout</td>
-                            <td>RDF, OWL, SPARQL, JSON-LD, Schema.org</td>
+                            <td>HTML, CSS, PHP, RDF, OWL, SPARQL, JSON-LD, Schema.org</td>
                         </tr>
                         <tr>
                             <td>Andi Nanis Sacharina</td>
-                            <td>creator</td>
+                            <td>knowsAbout</td>
+                            <td>API Integration, Cloud Deployment, Machine Learning, NLP</td>
+                        </tr>
+                        <tr>
+                            <td>Andi Nanis Sacharina</td>
+                            <td>subjectOf</td>
                             <td>CineMatch Semantic</td>
                         </tr>
                         <tr>
+                            <td>Andi Nanis Sacharina</td>
+                            <td>subjectOf</td>
+                            <td>MovieMate Cloud Computing</td>
+                        </tr>
+                        <tr>
+                            <td>Andi Nanis Sacharina</td>
+                            <td>subjectOf</td>
+                            <td>Smart Campus NLP</td>
+                        </tr>
+                        <tr>
                             <td>CineMatch Semantic</td>
-                            <td>keywords</td>
+                            <td>about</td>
                             <td>Web Semantic, RDF, OWL, SPARQL, Linked Data</td>
+                        </tr>
+                        <tr>
+                            <td>MovieMate Cloud Computing</td>
+                            <td>about</td>
+                            <td>Cloud Computing, Movie API, Deployment</td>
+                        </tr>
+                        <tr>
+                            <td>Smart Campus NLP</td>
+                            <td>about</td>
+                            <td>Natural Language Processing, Text Classification, Smart Campus</td>
                         </tr>
                     </tbody>
                 </table>
