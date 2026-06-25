@@ -49,11 +49,13 @@
                     { "@id": "#streamlit" },
                     { "@id": "#github" }
                 ],
-                "subjectOf": [
-                    { "@id": "#cinematch-semantic" },
-                    { "@id": "#moviemate-cloud" },
-                    { "@id": "#smart-campus-nlp" }
-                ],
+                "@reverse": {
+                    "creator": [
+                        { "@id": "#cinematch-semantic" },
+                        { "@id": "#moviemate-cloud" },
+                        { "@id": "#smart-campus-nlp" }
+                    ]
+                },
                 "description": "Mahasiswa Ilmu Komputer Universitas Halu Oleo yang tertarik pada pengembangan web, Web Semantik, cloud computing, dan penerapan teknologi terstruktur seperti RDF, OWL, SPARQL, JSON-LD, dan Schema.org."
             },
             {
@@ -232,6 +234,7 @@
                 <a href="#profil">Profil</a>
                 <a href="#pendidikan">Pendidikan</a>
                 <a href="#skill">Skill</a>
+                <a href="#kegiatan">Kegiatan</a>
                 <a href="#project">Project</a>
                 <a href="#relasi">Relasi</a>
                 <a href="#schema">Schema</a>
@@ -261,7 +264,9 @@
             </div>
 
             <div class="profile-card">
-                <div class="avatar">ANS</div>
+                <div class="avatar photo-avatar">
+                    <img src="20220829_100947.jpg" alt="Foto Andi Nanis Sacharina">
+                </div>
 
                 <div class="profile-info">
                     <h3>Andi Nanis Sacharina</h3>
@@ -468,19 +473,19 @@
                             <td>API Integration, Cloud Deployment, Machine Learning, NLP</td>
                         </tr>
                         <tr>
-                            <td>Andi Nanis Sacharina</td>
-                            <td>subjectOf</td>
                             <td>CineMatch Semantic</td>
+                            <td>creator</td>
+                            <td>Andi Nanis Sacharina</td>
                         </tr>
                         <tr>
-                            <td>Andi Nanis Sacharina</td>
-                            <td>subjectOf</td>
                             <td>MovieMate Cloud Computing</td>
+                            <td>creator</td>
+                            <td>Andi Nanis Sacharina</td>
                         </tr>
                         <tr>
-                            <td>Andi Nanis Sacharina</td>
-                            <td>subjectOf</td>
                             <td>Smart Campus NLP</td>
+                            <td>creator</td>
+                            <td>Andi Nanis Sacharina</td>
                         </tr>
                         <tr>
                             <td>CineMatch Semantic</td>

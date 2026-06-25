@@ -393,3 +393,15 @@ footer {
         font-size: 28px;
     }
 }
+
+.photo-avatar {
+    overflow: hidden;
+    padding: 0;
+}
+
+.photo-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
