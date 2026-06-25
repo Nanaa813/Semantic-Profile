@@ -109,12 +109,13 @@
             <div class="logo">Profil Semantik</div>
 
             <div class="nav-links">
-                <a href="#profil">Profil</a>
-                <a href="#pendidikan">Pendidikan</a>
-                <a href="#keahlian">Keahlian</a>
-                <a href="#organisasi">Organisasi</a>
-                <a href="#project">Project</a>
-                <a href="#relasi">Relasi</a>
+                <a href="#tabs" data-tab-target="profil">Profil</a>
+                <a href="#tabs" data-tab-target="pendidikan">Pendidikan</a>
+                <a href="#tabs" data-tab-target="keahlian">Keahlian</a>
+                <a href="#tabs" data-tab-target="organisasi">Organisasi</a>
+                <a href="#tabs" data-tab-target="project">Project</a>
+                <a href="#tabs" data-tab-target="relasi">Relasi</a>
+                <a href="#tabs" data-tab-target="schema">Schema</a>
             </div>
         </nav>
 
@@ -128,272 +129,285 @@
             </p>
 
             <div class="hero-actions">
-                <a href="#profil" class="btn primary">Lihat Profil</a>
-                <a href="#project" class="btn secondary">Lihat Project</a>
+                <a href="#tabs" class="btn primary" data-tab-target="profil">Lihat Profil</a>
+                <a href="#tabs" class="btn secondary" data-tab-target="project">Lihat Project</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="profil" class="section">
-            <div class="section-heading">
-                <span>Identitas</span>
-                <h2>Profil Akademik</h2>
-                <p>
-                    Bagian ini memuat identitas utama sebagai mahasiswa dan menjadi dasar entitas Person
-                    pada struktur data Schema.org.
-                </p>
+    <main class="content-area" id="tabs">
+        <section class="tab-section">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="profil">👤 Profil</button>
+                <button class="tab-btn" data-tab="pendidikan">🎓 Pendidikan</button>
+                <button class="tab-btn" data-tab="keahlian">💻 Keahlian</button>
+                <button class="tab-btn" data-tab="organisasi">🤝 Organisasi</button>
+                <button class="tab-btn" data-tab="project">🎬 Project</button>
+                <button class="tab-btn" data-tab="relasi">🔗 Relasi</button>
+                <button class="tab-btn" data-tab="schema">🧩 Schema</button>
             </div>
 
-            <div class="profile-layout">
-                <div class="profile-photo">
-                    <span>ANS</span>
+            <div class="tab-content active" id="profil">
+                <div class="section-heading">
+                    <span>Identitas</span>
+                    <h2>Profil Akademik</h2>
+                    <p>
+                        Bagian ini memuat identitas utama sebagai mahasiswa dan menjadi dasar entitas Person
+                        pada struktur data Schema.org.
+                    </p>
                 </div>
 
-                <div class="profile-card">
-                    <h3>Andi Nanis Sacharina</h3>
-                    <p>
-                        Mahasiswa Program Studi Ilmu Komputer Universitas Halu Oleo yang memiliki minat
-                        pada pengembangan web, dokumentasi project, dan penerapan Web Semantik dalam aplikasi.
-                    </p>
+                <div class="profile-layout">
+                    <div class="profile-photo">
+                        <span>ANS</span>
+                    </div>
 
-                    <div class="info-list">
-                        <div>
-                            <small>Nama Lengkap</small>
-                            <strong>Andi Nanis Sacharina</strong>
-                        </div>
-                        <div>
-                            <small>NIM</small>
-                            <strong>F1G123018</strong>
-                        </div>
-                        <div>
-                            <small>Program Studi</small>
-                            <strong>Ilmu Komputer</strong>
-                        </div>
-                        <div>
-                            <small>Email</small>
-                            <strong>andinanis813@gmail.com</strong>
+                    <div class="profile-card">
+                        <h3>Andi Nanis Sacharina</h3>
+                        <p>
+                            Mahasiswa Program Studi Ilmu Komputer Universitas Halu Oleo yang memiliki minat
+                            pada pengembangan web, dokumentasi project, dan penerapan Web Semantik dalam aplikasi.
+                        </p>
+
+                        <div class="info-list">
+                            <div>
+                                <small>Nama Lengkap</small>
+                                <strong>Andi Nanis Sacharina</strong>
+                            </div>
+                            <div>
+                                <small>NIM</small>
+                                <strong>F1G123018</strong>
+                            </div>
+                            <div>
+                                <small>Program Studi</small>
+                                <strong>Ilmu Komputer</strong>
+                            </div>
+                            <div>
+                                <small>Email</small>
+                                <strong>andinanis813@gmail.com</strong>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="pendidikan" class="section">
-            <div class="section-heading">
-                <span>Riwayat Pendidikan</span>
-                <h2>Pendidikan Aktif</h2>
-                <p>
-                    Informasi pendidikan digunakan untuk menunjukkan hubungan antara profil mahasiswa
-                    dan institusi pendidikan.
-                </p>
-            </div>
-
-            <div class="single-card">
-                <div class="card-icon">🎓</div>
-                <div>
-                    <h3>Universitas Halu Oleo</h3>
-                    <p>Program Studi Ilmu Komputer</p>
+            <div class="tab-content" id="pendidikan">
+                <div class="section-heading">
+                    <span>Riwayat Pendidikan</span>
+                    <h2>Pendidikan Aktif</h2>
                     <p>
-                        Pendidikan aktif ini direpresentasikan sebagai relasi antara entitas Person dan
-                        CollegeOrUniversity pada data terstruktur Schema.org.
+                        Informasi pendidikan digunakan untuk menunjukkan hubungan antara profil mahasiswa
+                        dan institusi pendidikan.
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <section id="keahlian" class="section">
-            <div class="section-heading">
-                <span>Keahlian</span>
-                <h2>Bidang Kemampuan</h2>
-                <p>
-                    Keahlian dikelompokkan agar informasi profil lebih rapi dan mudah dipahami.
-                </p>
-            </div>
-
-            <div class="skill-category-grid">
-                <div class="skill-category">
-                    <h3>Pengembangan Web</h3>
-                    <p>HTML, CSS, JavaScript, PHP</p>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Web Semantik</h3>
-                    <p>RDF, OWL, SPARQL, Linked Data</p>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Data Terstruktur</h3>
-                    <p>JSON-LD, Schema.org, Semantic Relation</p>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Dokumentasi Project</h3>
-                    <p>GitHub, laporan project, dokumentasi implementasi</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="organisasi" class="section">
-            <div class="section-heading">
-                <span>Organisasi</span>
-                <h2>Keterlibatan Organisasi</h2>
-                <p>
-                    Bagian ini memuat keterlibatan organisasi mahasiswa sebagai bagian dari profil akademik.
-                </p>
-            </div>
-
-            <div class="single-card">
-                <div class="card-icon">🤝</div>
-                <div>
-                    <h3>Himpunan Mahasiswa Program Studi Ilmu Komputer</h3>
-                    <p>
-                        Keterlibatan dalam himpunan mahasiswa menunjukkan partisipasi dalam lingkungan
-                        akademik program studi. Informasi ini digunakan sebagai relasi memberOf pada
-                        struktur data profil.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="project" class="section">
-            <div class="section-heading">
-                <span>Project Utama</span>
-                <h2>CineMatch Semantic</h2>
-                <p>
-                    Project ini menjadi bagian utama yang berkaitan langsung dengan mata kuliah Semantik Web.
-                </p>
-            </div>
-
-            <div class="project-feature">
-                <div class="project-content">
-                    <h3>CineMatch Semantic</h3>
-                    <p>
-                        CineMatch Semantic adalah aplikasi Web Semantik yang digunakan untuk menampilkan
-                        dan mencari data film. Data film direpresentasikan menggunakan RDF, struktur
-                        pengetahuannya dirancang menggunakan OWL, dan proses pengambilan data dilakukan
-                        menggunakan SPARQL.
-                    </p>
-                    <p>
-                        Project ini juga menerapkan konsep Linked Data untuk menghubungkan data lokal
-                        dengan sumber eksternal. Dalam website profil ini, CineMatch Semantic direpresentasikan
-                        sebagai entitas Project yang memiliki relasi creator dan about.
-                    </p>
-
-                    <div class="tag-group">
-                        <span>RDF</span>
-                        <span>OWL</span>
-                        <span>SPARQL</span>
-                        <span>PHP</span>
-                        <span>Linked Data</span>
-                    </div>
-                </div>
-
-                <div class="project-preview">
-                    <div class="preview-box">
-                        <span>Project</span>
-                        <h4>Semantic Web Application</h4>
-                        <p>CineMatch Semantic</p>
+                <div class="single-card">
+                    <div class="card-icon">🎓</div>
+                    <div>
+                        <h3>Universitas Halu Oleo</h3>
+                        <p class="lead-text">Program Studi Ilmu Komputer</p>
+                        <p>
+                            Pendidikan aktif ini direpresentasikan sebagai relasi antara entitas Person dan
+                            CollegeOrUniversity pada data terstruktur Schema.org. Informasi pendidikan dibuat
+                            ringkas agar tampilan profil tetap formal dan mudah dibaca.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="relasi" class="section">
-            <div class="section-heading">
-                <span>Relasi Semantik</span>
-                <h2>Subject, Predicate, Object</h2>
-                <p>
-                    Relasi semantik digunakan untuk menjelaskan hubungan antar entitas yang terdapat pada profil.
-                </p>
-            </div>
-
-            <div class="relation-layout">
-                <div class="relation-summary">
-                    <h3>Relasi Utama</h3>
+            <div class="tab-content" id="keahlian">
+                <div class="section-heading">
+                    <span>Keahlian</span>
+                    <h2>Bidang Kemampuan</h2>
                     <p>
-                        Relasi pada website ini menghubungkan mahasiswa, universitas, organisasi,
-                        keahlian, dan project. Bentuk relasi ditampilkan menggunakan konsep
-                        Subject, Predicate, dan Object.
+                        Keahlian dikelompokkan agar informasi profil lebih rapi, formal, dan mudah dipahami.
                     </p>
                 </div>
 
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Subject</th>
-                                <th>Predicate</th>
-                                <th>Object</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Andi Nanis Sacharina</td>
-                                <td>affiliation</td>
-                                <td>Universitas Halu Oleo</td>
-                            </tr>
-                            <tr>
-                                <td>Andi Nanis Sacharina</td>
-                                <td>memberOf</td>
-                                <td>Himpunan Mahasiswa Program Studi Ilmu Komputer</td>
-                            </tr>
-                            <tr>
-                                <td>Andi Nanis Sacharina</td>
-                                <td>knowsAbout</td>
-                                <td>Web Development</td>
-                            </tr>
-                            <tr>
-                                <td>Andi Nanis Sacharina</td>
-                                <td>knowsAbout</td>
-                                <td>Semantic Web</td>
-                            </tr>
-                            <tr>
-                                <td>CineMatch Semantic</td>
-                                <td>creator</td>
-                                <td>Andi Nanis Sacharina</td>
-                            </tr>
-                            <tr>
-                                <td>CineMatch Semantic</td>
-                                <td>about</td>
-                                <td>Semantic Web dan Structured Data</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="skill-category-grid">
+                    <div class="skill-category">
+                        <h3>Pengembangan Web</h3>
+                        <p>HTML, CSS, JavaScript, PHP</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Web Semantik</h3>
+                        <p>RDF, OWL, SPARQL, Linked Data</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Data Terstruktur</h3>
+                        <p>JSON-LD, Schema.org, Semantic Relation</p>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Dokumentasi Project</h3>
+                        <p>GitHub, laporan project, dokumentasi implementasi</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="schema" class="section">
-            <div class="section-heading">
-                <span>Schema.org</span>
-                <h2>Data Terstruktur JSON-LD</h2>
-                <p>
-                    Website ini menggunakan Schema.org dalam format JSON-LD untuk mendeskripsikan profil
-                    dan project secara terstruktur.
-                </p>
+            <div class="tab-content" id="organisasi">
+                <div class="section-heading">
+                    <span>Organisasi</span>
+                    <h2>Keterlibatan Organisasi</h2>
+                    <p>
+                        Bagian ini memuat keterlibatan organisasi mahasiswa sebagai bagian dari profil akademik.
+                    </p>
+                </div>
+
+                <div class="single-card">
+                    <div class="card-icon">🤝</div>
+                    <div>
+                        <h3>Himpunan Mahasiswa Program Studi Ilmu Komputer</h3>
+                        <p>
+                            Keterlibatan dalam himpunan mahasiswa menunjukkan partisipasi dalam lingkungan
+                            akademik program studi. Informasi ini dicantumkan sebagai bagian dari struktur
+                            profil dan digunakan sebagai relasi memberOf pada data Schema.org.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="schema-grid">
-                <div class="schema-item">
-                    <h3>Person</h3>
-                    <p>Merepresentasikan profil mahasiswa.</p>
+            <div class="tab-content" id="project">
+                <div class="section-heading">
+                    <span>Project Utama</span>
+                    <h2>CineMatch Semantic</h2>
+                    <p>
+                        Project ini menjadi bagian utama yang berkaitan langsung dengan mata kuliah Semantik Web.
+                    </p>
                 </div>
-                <div class="schema-item">
-                    <h3>CollegeOrUniversity</h3>
-                    <p>Merepresentasikan Universitas Halu Oleo.</p>
+
+                <div class="project-feature">
+                    <div class="project-content">
+                        <h3>CineMatch Semantic</h3>
+                        <p>
+                            CineMatch Semantic adalah aplikasi Web Semantik yang digunakan untuk menampilkan
+                            dan mencari data film. Data film direpresentasikan menggunakan RDF, struktur
+                            pengetahuannya dirancang menggunakan OWL, dan proses pengambilan data dilakukan
+                            menggunakan SPARQL.
+                        </p>
+                        <p>
+                            Project ini juga menerapkan konsep Linked Data untuk menghubungkan data lokal
+                            dengan sumber eksternal. Dalam website profil ini, CineMatch Semantic direpresentasikan
+                            sebagai entitas Project yang memiliki relasi creator dan about.
+                        </p>
+
+                        <div class="tag-group">
+                            <span>RDF</span>
+                            <span>OWL</span>
+                            <span>SPARQL</span>
+                            <span>PHP</span>
+                            <span>Linked Data</span>
+                        </div>
+                    </div>
+
+                    <div class="project-preview">
+                        <div class="preview-box">
+                            <span>Project</span>
+                            <h4>Semantic Web Application</h4>
+                            <p>CineMatch Semantic</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="schema-item">
-                    <h3>Organization</h3>
-                    <p>Merepresentasikan himpunan mahasiswa.</p>
+            </div>
+
+            <div class="tab-content" id="relasi">
+                <div class="section-heading">
+                    <span>Relasi Semantik</span>
+                    <h2>Subject, Predicate, Object</h2>
+                    <p>
+                        Relasi semantik digunakan untuk menjelaskan hubungan antar entitas yang terdapat pada profil.
+                    </p>
                 </div>
-                <div class="schema-item">
-                    <h3>Project</h3>
-                    <p>Merepresentasikan CineMatch Semantic.</p>
+
+                <div class="relation-layout">
+                    <div class="relation-summary">
+                        <h3>Relasi Utama</h3>
+                        <p>
+                            Relasi pada website ini menghubungkan mahasiswa, universitas, organisasi,
+                            keahlian, dan project. Bentuk relasi ditampilkan menggunakan konsep
+                            Subject, Predicate, dan Object.
+                        </p>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Predicate</th>
+                                    <th>Object</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Andi Nanis Sacharina</td>
+                                    <td>affiliation</td>
+                                    <td>Universitas Halu Oleo</td>
+                                </tr>
+                                <tr>
+                                    <td>Andi Nanis Sacharina</td>
+                                    <td>memberOf</td>
+                                    <td>Himpunan Mahasiswa Program Studi Ilmu Komputer</td>
+                                </tr>
+                                <tr>
+                                    <td>Andi Nanis Sacharina</td>
+                                    <td>knowsAbout</td>
+                                    <td>Web Development</td>
+                                </tr>
+                                <tr>
+                                    <td>Andi Nanis Sacharina</td>
+                                    <td>knowsAbout</td>
+                                    <td>Semantic Web</td>
+                                </tr>
+                                <tr>
+                                    <td>CineMatch Semantic</td>
+                                    <td>creator</td>
+                                    <td>Andi Nanis Sacharina</td>
+                                </tr>
+                                <tr>
+                                    <td>CineMatch Semantic</td>
+                                    <td>about</td>
+                                    <td>Semantic Web dan Structured Data</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="schema-item">
-                    <h3>DefinedTerm</h3>
-                    <p>Merepresentasikan bidang kemampuan dan konsep Web Semantik.</p>
+            </div>
+
+            <div class="tab-content" id="schema">
+                <div class="section-heading">
+                    <span>Schema.org</span>
+                    <h2>Data Terstruktur JSON-LD</h2>
+                    <p>
+                        Website ini menggunakan Schema.org dalam format JSON-LD untuk mendeskripsikan profil
+                        dan project secara terstruktur.
+                    </p>
+                </div>
+
+                <div class="schema-grid">
+                    <div class="schema-item">
+                        <h3>Person</h3>
+                        <p>Merepresentasikan profil mahasiswa.</p>
+                    </div>
+                    <div class="schema-item">
+                        <h3>CollegeOrUniversity</h3>
+                        <p>Merepresentasikan Universitas Halu Oleo.</p>
+                    </div>
+                    <div class="schema-item">
+                        <h3>Organization</h3>
+                        <p>Merepresentasikan himpunan mahasiswa.</p>
+                    </div>
+                    <div class="schema-item">
+                        <h3>Project</h3>
+                        <p>Merepresentasikan CineMatch Semantic.</p>
+                    </div>
+                    <div class="schema-item">
+                        <h3>DefinedTerm</h3>
+                        <p>Merepresentasikan bidang kemampuan dan konsep Web Semantik.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -402,6 +416,36 @@
     <footer>
         <p>Website Profil Semantik | Andi Nanis Sacharina | UAS Semantik Web</p>
     </footer>
+
+    <script>
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+        const tabLinks = document.querySelectorAll("[data-tab-target]");
+
+        function activateTab(target) {
+            tabButtons.forEach(button => {
+                button.classList.toggle("active", button.getAttribute("data-tab") === target);
+            });
+
+            tabContents.forEach(content => {
+                content.classList.toggle("active", content.id === target);
+            });
+        }
+
+        tabButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const target = button.getAttribute("data-tab");
+                activateTab(target);
+            });
+        });
+
+        tabLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                const target = link.getAttribute("data-tab-target");
+                activateTab(target);
+            });
+        });
+    </script>
 
 </body>
 </html>
