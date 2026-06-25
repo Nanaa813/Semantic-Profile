@@ -703,3 +703,57 @@ footer {
         text-align: left;
     }
 }
+
+/* FIX HEADER BIAR LEBIH COMPACT DAN FORMAL */
+
+.hero {
+    min-height: 58vh;
+    padding: 26px 8% 70px;
+}
+
+.hero-content {
+    max-width: 820px;
+    padding-top: 78px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    max-width: 780px;
+    margin: 20px 0 28px;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.label {
+    font-size: 14px;
+    padding: 9px 16px;
+}
+
+.btn {
+    padding: 12px 20px;
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+    .hero {
+        min-height: auto;
+        padding: 24px 7% 54px;
+    }
+
+    .hero-content {
+        padding-top: 58px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+}
